@@ -1,4 +1,25 @@
-if (i == n)
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        cout << "\n";
+        // space
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "* "; // a loop
+        }
+        for (int j = 1; j <= 2*(n - i)-1; j++)
+        {
+            cout << "  "; // b loop
+        }
+
+       
+        if (i == n)
             for (int j = 1; j <= n-1; j++)
             {
                 cout << "* "; // a loop
@@ -11,3 +32,6 @@ if (i == n)
             }
         }
     }
+    cout << endl;
+    return 0;
+}
